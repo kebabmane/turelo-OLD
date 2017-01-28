@@ -1,0 +1,5 @@
+<div class="flexcontainer">
+  <div class="flex-card" *ngFor="let feed of feeds | slice:0:30" class="post">
+    <feed class="feed-block" feedID="{{ feed }}"></feed>
+  </div>
+</div>
