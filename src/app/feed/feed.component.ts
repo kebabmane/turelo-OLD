@@ -7,11 +7,14 @@ import { TureloAPIService } from '../turelo-api.service';
   styleUrls: ['./feed.component.scss']
 })
 export class FeedComponent implements OnInit {
-  @Input() feedID: number;
+    @Input() GUID: string;
+    feed;
 
-  constructor(private _tureloAPIService: TureloAPIService) {}
+    constructor(private _tureloAPIService: TureloAPIService) {}
 
-  ngOnInit() {
-  }
-
+    ngOnInit() {
+      this._tureloAPIService.fetchFeed(this.GUID).subscribe(data => {
+        this.feed = data;
+        }, error => console.log('Could not load feed' + this.GUID));
+    }
 }

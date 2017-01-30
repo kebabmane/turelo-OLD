@@ -7,17 +7,17 @@ import 'rxjs/add/operator/map';
 export class TureloAPIService {
 baseUrl: string;
 
-constructor(private http: Http) {
-  this.baseUrl = 'https://siowzm2t70.execute-api.us-east-1.amazonaws.com/development';
-}
+  constructor(private http: Http) {
+    this.baseUrl = 'https://siowzm2t70.execute-api.us-east-1.amazonaws.com/development';
+  }
 
   fetchFeeds(): Observable<any> {
     return this.http.get(`${this.baseUrl}/feeds`)
                     .map(response => JSON.parse(response.json()).Items);
   }
 
-  fetchFeed(id: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/item/${id}.json`)
-                    .map(response => response.json());
+  fetchFeed(GUID: string): Observable<any> {
+    return this.http.get(`${this.baseUrl}/feed?GUID=${GUID}`)
+                    .map(response => JSON.parse(response.json()).Items);
   }
 }

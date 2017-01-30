@@ -15,7 +15,7 @@ export class FeedsComponent implements OnInit {
 
     ngOnInit() {
       this._tureloAPIService.fetchFeeds()
-                    .subscribe(
+            .subscribe(
                       feeds => this.feeds = feeds,
                       error => console.log('Error fetching feeds'));
                 }

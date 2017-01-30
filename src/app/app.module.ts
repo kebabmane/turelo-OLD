@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import 'hammerjs';
 import { FeedEntriesComponent } from './feed-entries/feed-entries.component';
-import { ItemComponent } from './item/item.component';
 import { TureloAPIService } from './turelo-api.service';
 import { FeedsComponent } from './feeds/feeds.component';
 import { TimelineComponent } from './timeline/timeline.component';
@@ -22,7 +21,6 @@ import { FeedComponent } from './feed/feed.component';
     AppComponent,
     HeaderComponent,
     FeedEntriesComponent,
-    ItemComponent,
     FeedsComponent,
     TimelineComponent,
     FeedComponent

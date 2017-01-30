@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feed-entries.component.scss']
 })
 export class FeedEntriesComponent implements OnInit {
-  items: number[];
+  feeds: number[];
 
   constructor() {
-    this.items = Array(9);
+    this.feeds = Array(9);
   }
 
   ngOnInit() {

@@ -1,11 +1,16 @@
-<md-card>
-  <img md-card-image src="https://material.angularjs.org/latest/img/washedout.png">
-  <md-card-title>#{{feed}}</md-card-title>
-  <md-card-content>
-    <p>Here is some content #{{GUID}}</p>
-  </md-card-content>
-  <md-card-actions align="end">
-    <button md-button>LIKE</button>
-    <button md-button>SHARE</button>
-  </md-card-actions>
-</md-card>
+<div *ngIf="!feed" class="loading-section">
+    MEOW MEOW MEOW
+</div>
+<div *ngIf="feed">
+  <md-card>
+    <img md-card-image src="https://material.angularjs.org/latest/img/washedout.png">
+    <md-card-title>{{feed[0].title}}</md-card-title>
+    <md-card-content>
+      <p>Here is some content {{feed.GUID}}</p>
+    </md-card-content>
+    <md-card-actions align="end">
+      <button md-button>LIKE</button>
+      <button md-button>SHARE</button>
+    </md-card-actions>
+  </md-card>
+</div>
