@@ -12,6 +12,7 @@ import { FeedEntriesComponent } from './feed-entries/feed-entries.component';
 import { TureloAPIService } from './turelo-api.service';
 import { FeedsComponent } from './feeds/feeds.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { FeedEntryComponent } from './feed-entry/feed-entry.component';
 
 import { routing } from './app.routes';
 import { FeedComponent } from './feed/feed.component';

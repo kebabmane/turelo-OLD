@@ -1,18 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { TureloAPIService } from '../turelo-api.service';
 
 @Component({
-  selector: 'app-feed-entries',
+  selector: 'feed-entries',
   templateUrl: './feed-entries.component.html',
   styleUrls: ['./feed-entries.component.scss']
 })
 export class FeedEntriesComponent implements OnInit {
-  feeds: number[];
+  @Input() FeedGUID: string;
+  feedEntries;
 
-  constructor() {
-    this.feeds = Array(9);
-  }
+  constructor(private _tureloAPIService: TureloAPIService) {}
 
   ngOnInit() {
+    this._tureloAPIService.fetchFeedEntries(this.FeedGUID)
+        .subscribe(
+            feedEntries => this.feedEntries = feedEntries,
+            error => console.log('Error fetching feeds'));
   }
-
 }

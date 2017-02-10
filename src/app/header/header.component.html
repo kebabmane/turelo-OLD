@@ -1,12 +1,11 @@
 <div class="demo-toolbar">
 <md-toolbar color="primary">
-  <md-icon class="demo-toolbar-icon">menu</md-icon>
-
   <span>turelo</span>
 
   <span class="demo-fill-remaining"></span>
 
   <button md-button>timelines</button>
-  <button md-button>feeds</button>
+  <button md-button [routerLink]="['/feeds']">feeds</button>
+  <button md-button>profile</button>
 </md-toolbar>
 </div>
