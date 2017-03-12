@@ -1,6 +1,6 @@
 <div class="flexcontainer">
-  <div class="flex-card" *ngFor="let feedEntry of feedEntries" class="post">
-    {{ feedEntry | json}}
-    <feedEntry class="feed-block" feedGUID="{{ feed.GUID }}"></feedEntry>
+  <div class="flex-card" *ngFor="let entry of feedEntries" class="post">
+    {{ feedEntry | json }}
+    <feedEntry class="feed-block" FeedGUID="{{ feedEntry.FeedGUID }}"></feedEntry>
   </div>
 </div>

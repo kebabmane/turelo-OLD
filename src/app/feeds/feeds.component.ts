@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+import { ActivatedRoute } from '@angular/router';
 
 import { TureloAPIService } from '../turelo-api.service';
 
@@ -11,7 +12,10 @@ import { TureloAPIService } from '../turelo-api.service';
 export class FeedsComponent implements OnInit {
     feeds;
 
-    constructor(private _tureloAPIService: TureloAPIService) {}
+    constructor(
+      private _tureloAPIService: TureloAPIService,
+      private route: ActivatedRoute
+    ) {}
 
     ngOnInit() {
       this._tureloAPIService.fetchFeeds()
