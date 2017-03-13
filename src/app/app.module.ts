@@ -16,6 +16,7 @@ import { routing } from './app.routes';
 import { FeedComponent } from './feed/feed.component';
 
 import 'hammerjs';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,14 @@ import 'hammerjs';
     FeedEntryComponent,
     FeedsComponent,
     TimelineComponent,
-    FeedComponent
+    FeedComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
     MomentModule,
     FlexLayoutModule.forRoot(),
     routing
