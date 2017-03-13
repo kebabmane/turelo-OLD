@@ -2,12 +2,13 @@ import { Component, Input, OnInit } from '@angular/core';
 import { TureloAPIService } from '../turelo-api.service';
 
 @Component({
-  selector: 'feed-entry',
+  selector: 'feedEntry',
   templateUrl: './feed-entry.component.html',
   styleUrls: ['./feed-entry.component.scss']
 })
 export class FeedEntryComponent implements OnInit {
   @Input() FeedGUID: string;
+  @Input() link: string;
   feedEntry;
 
   constructor(private _tureloAPIService: TureloAPIService) {}
@@ -18,3 +19,5 @@ export class FeedEntryComponent implements OnInit {
       }, error => console.log('Could not load feed' + this.link));
   }
 }
+
+

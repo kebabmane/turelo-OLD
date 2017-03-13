@@ -1,0 +1,18 @@
+<div *ngIf="!feedEntry" class="loading-section">
+Loading...
+</div>
+<div *ngIf="feedEntry">
+  <md-card>
+    <img md-card-image src="{{ feedEntry[0].cover_img || 'https://s3.amazonaws.com/turelo_production/images/newspaper.png'}}">
+    <a [routerLink]="['/feeds/feed_entries/', feedEntry[0].link]">
+           <md-card-title>{{feedEntry[0].title}}</md-card-title>
+    </a>
+    <md-card-content>
+      <p>Here is some content</p>
+    </md-card-content>
+    <md-card-actions align="end">
+      <button md-button>LIKE</button>
+      <button md-button>SHARE</button>
+    </md-card-actions>
+  </md-card>
+</div>
