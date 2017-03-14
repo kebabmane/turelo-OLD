@@ -1,4 +1,5 @@
-# Turelo - Open Source, Angular + Lambda + DynamoDB Project
+# Turelo - Open Source RSS Reader
+## Combining Angular + Lambda + DynamoDB Project
 
 [![Code Climate](https://codeclimate.com/github/kebabmane/turelo/badges/gpa.svg)](https://codeclimate.com/github/kebabmane/turelo)
 [![Test Coverage](https://codeclimate.com/github/kebabmane/turelo/badges/coverage.svg)](https://codeclimate.com/github/kebabmane/turelo/coverage)
