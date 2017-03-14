@@ -5,6 +5,11 @@ node_js:
 addons:
   code_climate:
     repo_token: 28205bd0e861a1fb754df89e0085b84a7fde079e90dbf235fb9451e885a2cc4b
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable  
 after_success:
   - npm install -g codeclimate-test-reporter
   - codeclimate-test-reporter < lcov.info      
