@@ -1,6 +1,9 @@
-<div class="flexcontainer">
-  <div class="flex-card" *ngFor="let feedEntry of feedEntries" class="post">
-    <feedEntry class="feed-block" link="{{ feedEntry.link }}"></feedEntry>
-  </div>
-</div>
+<div class="card-columns">
+  <feedEntry *ngFor="let feedEntry of feedEntries" (click)="onClick($event, feedEntry)" [link]="feedEntry.link"></feedEntry>
+</div>  
   
+
+
+
+  
+

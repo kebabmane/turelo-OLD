@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { TureloAPIService } from '../turelo-api.service';
 
 @Component({
-  selector: 'feed-entries',
+  selector: 'feedEntries',
   templateUrl: './feed-entries.component.html',
   styleUrls: ['./feed-entries.component.scss']
 })

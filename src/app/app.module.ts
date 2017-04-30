@@ -16,6 +16,8 @@ import { FeedComponent } from './feed/feed.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainComponent } from './main/main.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { MainComponent } from './main/main.component';
     TimelineComponent,
     FeedComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    ProfileComponent,
+    AuthComponent
   ],
   imports: [
     NgbModule.forRoot(),

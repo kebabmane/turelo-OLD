@@ -7,7 +7,6 @@ import { TureloAPIService } from '../turelo-api.service';
   styleUrls: ['./feed-entry.component.scss']
 })
 export class FeedEntryComponent implements OnInit {
-  @Input() FeedGUID: string;
   @Input() link: string;
   feedEntry;
 
