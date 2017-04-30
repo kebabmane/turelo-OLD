@@ -32,3 +32,5 @@ baseUrl: string;
   }
 
 }
+
+export class TureloApiService {}

@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
 import { MomentModule } from 'angular2-moment';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
@@ -14,9 +13,9 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { FeedEntryComponent } from './feed-entry/feed-entry.component';
 import { routing } from './app.routes';
 import { FeedComponent } from './feed/feed.component';
-
-import 'hammerjs';
 import { FooterComponent } from './footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -27,15 +26,16 @@ import { FooterComponent } from './footer/footer.component';
     FeedsComponent,
     TimelineComponent,
     FeedComponent,
-    FooterComponent
+    FooterComponent,
+    MainComponent
   ],
   imports: [
+    NgbModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
     MomentModule,
-    FlexLayoutModule.forRoot(),
+    FlexLayoutModule,
     routing
   ],
   providers: [TureloAPIService],

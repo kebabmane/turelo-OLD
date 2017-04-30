@@ -2,17 +2,16 @@
 Loading...
 </div>
 <div *ngIf="feedEntry">
-  <md-card>
-    <img md-card-image src="{{ feedEntry[0].cover_img || 'https://s3.amazonaws.com/turelo_production/images/newspaper.png'}}">
-    <a [routerLink]="['/feeds/feed_entries/', feedEntry[0].link]">
-           <md-card-title>{{feedEntry[0].title}}</md-card-title>
+  
+<div class="card">
+  <img class="card-img-top" src="{{ feedEntry[0].cover_img || 'https://s3.amazonaws.com/turelo_production/images/newspaper.png'}}" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">{{feedEntry[0].title}}</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a [routerLink]="['/feeds/feed_entries/', feed[0].GUID]" class="btn btn-primary">
+            Go to entry
     </a>
-    <md-card-content>
-      <p>Here is some content</p>
-    </md-card-content>
-    <md-card-actions align="end">
-      <button md-button>LIKE</button>
-      <button md-button>SHARE</button>
-    </md-card-actions>
-  </md-card>
+  </div>
+</div>
+
 </div>

@@ -5,7 +5,7 @@ import { FeedsComponent } from './feeds/feeds.component';
 import { TimelineComponent } from './timeline/timeline.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'feeds', pathMatch : 'full'},
+  {path: '', redirectTo: 'main', pathMatch : 'full'},
   {path: 'feeds', component: FeedsComponent},
   {path: 'feeds/feed_entries/:id', component: FeedEntriesComponent}
 ];

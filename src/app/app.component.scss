@@ -1,33 +1,14 @@
-@import '~@angular/material/core/theming/all-theme';
-
-// NOTE: Theming is currently experimental and not yet publically released!
-
-@include mat-core();
-
-$primary: mat-palette($mat-deep-purple);
-$accent:  mat-palette($mat-amber, A200, A100, A400);
-
-$theme: mat-light-theme($primary, $accent);
-
-@include angular-material-theme($theme);
-
-.m2app-dark {
-  $dark-primary: mat-palette($mat-pink, 700, 500, 900);
-  $dark-accent:  mat-palette($mat-blue-grey, A200, A100, A400);
-  $dark-warn:    mat-palette($mat-deep-orange);
-  $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
-
-  @include angular-material-theme($dark-theme);
-}
-
 .wrapper {
   position: relative;
   width: 100%;
   min-height: 80px;
+  padding-top: 80px;
   margin: 0 auto;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 15px;
   height: 100%;
   line-height: 1.3;
   margin-bottom: -50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

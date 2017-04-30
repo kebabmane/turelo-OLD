@@ -1,11 +1,21 @@
-<div class="toolbar">
-<md-toolbar color="primary">
-  <span>turelo</span>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">turelo</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/feeds']">feeds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">profile</a>
+          </li>
+        </ul>
 
-  <span class="fill-remaining"></span>
+      </div>
+    </nav>
 
-  <button md-button>timelines</button>
-  <button md-button [routerLink]="['/feeds']">feeds</button>
-  <button md-button>profile</button>
-</md-toolbar>
-</div>

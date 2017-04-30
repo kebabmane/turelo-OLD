@@ -1,5 +1,3 @@
-<div class="flexcontainer">
-  <div class="flex-card" *ngFor="let feed of feeds" class="post">
-    <feed class="feed-block" GUID="{{ feed.GUID }}"></feed>
-  </div>
-</div>
+<div class="card-columns">
+  <feed *ngFor="let feed of feeds" (click)="onClick($event, feed)" [GUID]="feed.GUID"></feed>
+</div>  

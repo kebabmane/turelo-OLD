@@ -2,17 +2,16 @@
 Loading.
 </div>
 <div *ngIf="feed">
-  <md-card>
-    <img md-card-image src="{{ feed[0].cover_img || 'https://s3.amazonaws.com/turelo_production/images/newspaper.png'}}">
-    <a [routerLink]="['/feeds/feed_entries/', feed[0].GUID]">
-           <md-card-title>{{feed[0].title}}</md-card-title>
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="{{feed[0].cover_img || 'https://s3.amazonaws.com/turelo_production/images/newspaper.png'}}" class="img-fluid">
+  <div class="card-block">
+    <h4 class="card-title">{{feed[0].title}}</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a [routerLink]="['/feeds/feed_entries/', feed[0].GUID]" class="btn btn-primary">
+            Go to feed
     </a>
-    <md-card-content>
-      <p>Here is some content</p>
-    </md-card-content>
-    <md-card-actions align="end">
-      <button md-raised-button>LIKE</button>
-      <button md-button>SHARE</button>
-    </md-card-actions>
-  </md-card>
+  </div>
+</div>
+
 </div>
