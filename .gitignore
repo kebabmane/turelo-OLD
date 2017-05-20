@@ -16,7 +16,7 @@
 .settings/
 
 # firebase stuff
-/firebase
+/src/firebase/*
 
 # IDE - VSCode
 .vscode/*
