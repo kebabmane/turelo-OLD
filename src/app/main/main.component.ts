@@ -12,6 +12,7 @@ export class MainComponent {
   private isLoggedIn: Boolean;
   private user_displayName: String;
   private user_email: String;
+  private user_image: String;
 
   routes: Object[] = [
     {
@@ -45,6 +46,7 @@ export class MainComponent {
           this.isLoggedIn = true;
           this.user_displayName = auth.displayName;
           this.user_email = auth.email;
+          this.user_image = auth.photoURL;
           console.log("Logged in");
           console.log(auth);
         }
