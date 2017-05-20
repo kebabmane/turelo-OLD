@@ -20,10 +20,15 @@ export class MainComponent {
       icon: 'business',
     },
     {
+      title: 'Categories',
+      route: '/categories',
+      icon: 'shop',
+    },
+    {
       title: 'Feeds',
       route: '/feeds',
       icon: 'shop',
-    },
+    },    
   ];
 
   constructor(public _authService: AuthService,

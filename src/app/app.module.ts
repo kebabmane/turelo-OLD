@@ -24,6 +24,7 @@ import { MainComponent } from './main/main.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EntryComponent } from './entry/entry.component';
 import { LoginComponent } from './login/login.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { LoginComponent } from './login/login.component';
     MainComponent,
     ProfileComponent,
     EntryComponent,
-    LoginComponent
+    LoginComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,

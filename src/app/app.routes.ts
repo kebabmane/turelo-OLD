@@ -8,6 +8,7 @@ import { EntryComponent } from './entry/entry.component';
 import { AuthService } from '../auth/services/auth-service';
 import { AuthGuard } from '../auth/guards/auth-guard';
 import { UnauthGuard } from '../auth/guards/unauth-guard';
+import { CategoriesComponent } from './categories/categories.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   [
     { path: '', redirectTo: '/timeline', pathMatch: 'full' },
     { path: 'timeline', component: TimelineComponent },
+    { path: 'categories', component: CategoriesComponent },
     { path: 'feeds', component: FeedsComponent },
     { path: 'feeds/feed_entries/:id', component: FeedEntriesComponent },
     { path: 'feeds/feed_entries/:id/:link', component: EntryComponent }
