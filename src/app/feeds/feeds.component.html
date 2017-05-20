@@ -1,1 +1,3 @@
-<router-outlet></router-outlet>
+<div class="flexcontainer">
+  <feed *ngFor="let feed of feeds" (click)="onClick($event, feed)" [GUID]="feed.GUID" class="flex-card"></feed>
+</div>
