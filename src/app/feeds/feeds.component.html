@@ -1,3 +1,9 @@
-<div class="card-columns">
-  <feed *ngFor="let feed of feeds" (click)="onClick($event, feed)" [GUID]="feed.GUID"></feed>
-</div>  
+<td-layout-nav toolbarTitle="turelo" navigationRoute="/feeds">
+  <router-outlet></router-outlet>
+
+
+  <td-layout-footer>
+    Copyright &copy; 2017 turelo. All rights reserved
+  </td-layout-footer>
+
+</td-layout-nav>

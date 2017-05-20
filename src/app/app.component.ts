@@ -1,4 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth/services/auth-service';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +10,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
 
+  private isLoggedIn: Boolean;
+  private user_displayName: String;
+  private user_email: String;
+
+  constructor(public _authService: AuthService, private router: Router) {
+
+  }
 }

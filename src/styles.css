@@ -1,9 +1,0 @@
-@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
-@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
-
-html, body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
