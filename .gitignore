@@ -15,6 +15,9 @@
 *.launch
 .settings/
 
+# firebase stuff
+/src/firebase/*
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json

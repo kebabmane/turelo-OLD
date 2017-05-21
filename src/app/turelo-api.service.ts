@@ -28,7 +28,7 @@ baseUrl: string;
 
   fetchFeedEntry(link: string): Observable<any> {
     return this.http.get(`${this.baseUrl}/feeds/feed_entry?link=${link}`)
-                    .map(response => JSON.parse(response.json()).Items);
+                    .map(response => JSON.parse(response.json()).Item);
   }
 
 }

@@ -7,10 +7,10 @@ Loading...
 <div class="card">
   <img class="card-img-top" src="{{'https://s3.amazonaws.com/turelo_production/images/newspaper.png'}}" class="img-fluid">
   <div class="card-block">
-    <h4 class="card-title">{{feedEntry}}</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">
-        Go to entry
+    <h4 class="card-title">{{feedEntry.title}}</h4>
+    <p class="card-text">{{feedEntry.contentSnippet}}</p>
+    <a [routerLink]="['/feeds/feed_entries/entry/', feedEntry.link]" class="btn btn-primary">
+            Go to entry
     </a>
   </div>
 </div>

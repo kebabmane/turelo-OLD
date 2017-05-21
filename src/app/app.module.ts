@@ -1,48 +1,64 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {NgModule, ErrorHandler, Type} from '@angular/core';
+import {BrowserModule, Title} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+import { AuthGuard } from '../auth/guards/auth-guard';
+import { UnauthGuard } from '../auth/guards/unauth-guard';
+import { AuthService } from '../auth/services/auth-service';
+import { CovalentCoreModule } from '@covalent/core';
+import { FirebaseModule } from '../firebase';
+import { AngularFireModule} from 'angularfire2';
+import { appRoutes, appRoutingProviders } from './app.routes';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MomentModule } from 'angular2-moment';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { FeedEntriesComponent } from './feed-entries/feed-entries.component';
 import { TureloAPIService } from './turelo-api.service';
 import { FeedsComponent } from './feeds/feeds.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { FeedEntryComponent } from './feed-entry/feed-entry.component';
-import { routing } from './app.routes';
 import { FeedComponent } from './feed/feed.component';
-import { FooterComponent } from './footer/footer.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainComponent } from './main/main.component';
 import { ProfileComponent } from './profile/profile.component';
-import { AuthComponent } from './auth/auth.component';
+import { EntryComponent } from './entry/entry.component';
+import { LoginComponent } from './login/login.component';
+import { CategoriesComponent } from './categories/categories.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FeedEntriesComponent,
     FeedEntryComponent,
     FeedsComponent,
     TimelineComponent,
     FeedComponent,
-    FooterComponent,
     MainComponent,
     ProfileComponent,
-    AuthComponent
+    EntryComponent,
+    LoginComponent,
+    CategoriesComponent
   ],
   imports: [
-    NgbModule.forRoot(),
     BrowserModule,
+    BrowserAnimationsModule,
+    CovalentCoreModule,
     FormsModule,
     HttpModule,
     MomentModule,
     FlexLayoutModule,
-    routing
+    appRoutes,
+    FirebaseModule,
   ],
-  providers: [TureloAPIService],
+  providers: [
+    TureloAPIService,
+    appRoutingProviders,
+    Title,
+    AuthGuard,
+    AuthService
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

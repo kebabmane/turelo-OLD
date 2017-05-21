@@ -1,0 +1,20 @@
+<div layout="column" layout-fill>
+  <md-toolbar color="primary" class="md-whiteframe-z1">
+    <span>turelo - login</span>
+  </md-toolbar>
+  <div class="md-content" layout-padding flex><br><br><br><br><br>
+    <div layout-gt-xs="row" layout-align-gt-xs="center start" class="margin">
+      <div flex-gt-xs="50">
+        <md-card tdMediaToggle="gt-xs" [mediaClasses]="['push-top-lg']">
+          <md-card-title>Login</md-card-title>
+          <md-card-subtitle>Sign in with the below providers</md-card-subtitle>
+          <md-divider></md-divider>
+          <md-card-actions layout="row">
+            <button flex md-raised-button color="accent" (click)="login()">Google</button>
+            <button md-button>Cancel</button>
+          </md-card-actions>
+        </md-card>
+      </div>
+    </div>
+  </div>
+</div>
