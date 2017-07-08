@@ -1,3 +1,11 @@
+<td-layout-nav toolbarTitle="turelo">
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span flex></span>
+    <a md-icon-button mdTooltip="Timeline" [routerLink]="timeline"><md-icon>timeline</md-icon></a>
+    <a md-icon-button mdTooltip="Notifications" [routerLink]="timeline"><md-icon>notifications</md-icon></a>
+    <a md-icon-button mdTooltip="Profile" [routerLink]="profile"><img class="circle img-responsive" src="{{user_image}}"></a>             
+  </div> 
+
 <div *ngIf="!entry" class="loading-section">
 Loading.
 </div>
@@ -12,3 +20,6 @@ Loading.
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
+</td-layout-nav> 
+
+

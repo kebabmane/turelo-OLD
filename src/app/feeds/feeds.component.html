@@ -1,3 +1,13 @@
-<div class="flexcontainer">
-  <feed *ngFor="let feed of feeds" (click)="onClick($event, feed)" [GUID]="feed.GUID" class="flex-card"></feed>
-</div>
+<td-layout-nav toolbarTitle="turelo">
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span flex></span>
+    <a md-icon-button mdTooltip="Timeline" [routerLink]="timeline"><md-icon>timeline</md-icon></a>
+    <a md-icon-button mdTooltip="Notifications" [routerLink]="timeline"><md-icon>notifications</md-icon></a>
+    <a md-icon-button mdTooltip="Profile" [routerLink]="profile"><img class="circle img-responsive" src="{{user_image}}"></a>             
+  </div> 
+
+<md-grid-list cols="2" rowHeight="2:1" gutterSize="15px">
+  <feed *ngFor="let feed of feeds" (click)="onClick($event, feed)" [GUID]="feed.GUID"></feed>
+</md-grid-list>
+
+</td-layout-nav> 

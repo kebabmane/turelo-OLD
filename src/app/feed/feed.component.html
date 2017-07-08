@@ -4,7 +4,7 @@ Loading.
 
 <div *ngIf="feed">
 
-<md-card>
+<md-card flex>
     <img md-card-image src="{{ feed[0].cover_img || 'https://s3.amazonaws.com/turelo_production/images/newspaper.png'}}">
     <a [routerLink]="['/feeds/feed_entries/', feed[0].GUID]">
     <md-card-title>{{feed[0].title}}</md-card-title>
