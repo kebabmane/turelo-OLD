@@ -17,5 +17,21 @@ A seperate repo will be setup providing Cloudformation & Serverless Scripts so o
 
 This is very very alpha software and should not be used by anyone during this phase
 
+## Steps to Install
+
+'git clone https://github.com/kebabmane/turelo.git
+
+cd turelo'
+
+This app requires a few things to be installed homebrew, awscli, node & yarn
+
+Once the depencencies are met
+
+'yarn install
+
+ng serve'
+
+The app should open in a new window
+
 Cheers
 Rhys / @kebabman

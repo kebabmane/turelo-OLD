@@ -1,6 +1,5 @@
 @import '~@angular/material/theming';
 @import '~@covalent/core/theming/all-theme';
-@import '~@covalent/markdown/markdown-theme';
 @import '~@covalent/highlight/highlight-theme';
 // Plus imports for other components in your app.
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
@@ -132,7 +131,6 @@ $theme: mat-light-theme($primary, $accent, $warn);
 // that you are using.
 @include angular-material-theme($theme);
 @include covalent-theme($theme);
-@include covalent-markdown-theme($theme);
 @include covalent-highlight-theme();
 // Active icon color in list nav
 md-nav-list {
