@@ -164,9 +164,9 @@
   dependencies:
     "@covalent/core" "1.0.0-beta.5-1"
 
-"@covalent/highlight@^1.0.0-beta.4":
-  version "1.0.0-beta.5-1"
-  resolved "https://registry.yarnpkg.com/@covalent/highlight/-/highlight-1.0.0-beta.5-1.tgz#c4af6d82b6e3aef21806c0fffd09477553b1b552"
+"@covalent/highlight@^1.0.0-beta.6":
+  version "1.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@covalent/highlight/-/highlight-1.0.0-beta.6.tgz#5d305a96d0c85c07e4f0fea81bb952955ab8eb23"
   dependencies:
     highlight.js "9.11.0"
 

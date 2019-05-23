@@ -26,7 +26,7 @@
     "@angular/router": "^4.2.1",
     "@covalent/core": "^1.0.0-beta.4",
     "@covalent/dynamic-forms": "^1.0.0-beta.4",
-    "@covalent/highlight": "^1.0.0-beta.4",
+    "@covalent/highlight": "^1.0.0-beta.6",
     "@covalent/http": "^1.0.0-beta.4",
     "@types/core-js": "^0.9.41",
     "@types/d3-color": "^1.0.5",
