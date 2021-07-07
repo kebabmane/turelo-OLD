@@ -195,9 +195,9 @@
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@types/d3-color/-/d3-color-1.0.5.tgz#cad755f0fc6de7b70fa6e5e08afa81ef4c2248de"
 
-"@types/jasmine@^2.5.51":
-  version "2.5.53"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.53.tgz#4e0cefad09df5ec48c8dd40433512f84b1568d61"
+"@types/jasmine@^3.7.8":
+  version "3.7.8"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.7.8.tgz#e558b31bf2418fd63de2329bcfb29f5a42413d4b"
 
 "@types/node@^6.0.46":
   version "6.0.79"
